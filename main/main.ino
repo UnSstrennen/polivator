@@ -16,7 +16,7 @@ void loop() {
   // в него мы не попадем, если условие при while не исполнится
   while (hum_now <= min_hum - HYSTERESIS) {
     digitalWrite(pump, HIGH);
-    byte hum_now = map(analogRead(hum_sensor, 0, 1023, 0, 100));
+    byte hum_now = map(analogRead(hum_sensor), 0, 1023, 0, 100);
     if (hum_now > min_hum + HYSTERESIS) {
       digitalWrite(pump, LOW);
       break;
