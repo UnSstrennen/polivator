@@ -1,7 +1,7 @@
-#define min_hum_reg A0
-#define hum_sensor A1
-#define min_light_reg A2
-#define light_sensor A3
+#define min_hum_reg PB5
+#define hum_sensor PB2
+#define min_light_reg PB4
+#define light_sensor PB3
 #define pump 1
 
 const byte HYSTERESIS = 5;
